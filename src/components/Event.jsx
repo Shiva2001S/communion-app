@@ -3,6 +3,7 @@ import Card from './Card';
 import styles from '../styles/Event.module.css';
 import { context } from '../App';
 import { CgClose } from "react-icons/cg";
+import { toast, ToastContainer } from 'react-toastify';
 const Event = () => {
   const [display, setDisplay] = useState(false);
   const [title, setTitle] = useState('');
@@ -27,8 +28,8 @@ const Event = () => {
       'description': desc
     }
     setArr(prevArr => [...prevArr, obj]);
-    console.log(arr);
     setDisplay(false);
+    toast.success("Event Posted Successfully");
   }
   return (
     <div>
@@ -92,6 +93,7 @@ const Event = () => {
               />
             ))}
       </div>
+      <ToastContainer className={styles.toast} theme="colored" position="top-right" />
     </div>
   )
 }
