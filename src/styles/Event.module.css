@@ -1,0 +1,108 @@
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    text-align: center;
+    background-color: rgb(23, 23, 208);
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.first button {
+    background-color: rgb(64, 64, 220);
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+}
+
+.formDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.frm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid red;
+    height: 70vh;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+
+input {
+    display: inline-block;
+    width: 90%;
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    height: 100px;
+    width: 90%;
+    border-radius: 8px;
+}
+
+select {
+    display: inline-block;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cross {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-left: 85%;
+}
+
+.cross:hover {
+    background-color: red;
+    transform: scale(1.5);
+}
+
+.mybtn{
+    border-radius: 5px;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(8, 183, 241);
+}
+
+.mybtnDiv{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cross2 {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+.cross2:hover {
+    background-color: red;
+    transform: scale(1.5);
+}
