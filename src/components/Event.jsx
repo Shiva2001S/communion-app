@@ -20,6 +20,10 @@ const Event = () => {
 
   const handle = (e) => {
     e.preventDefault();
+    if(title == '' || date == undefined || category == '' || location == '' || desc == ''){
+      toast.error('Fill all the fields');
+      return;
+    }
     let obj = {
       'title': title,
       'date': date,
@@ -29,6 +33,11 @@ const Event = () => {
     }
     setArr(prevArr => [...prevArr, obj]);
     setDisplay(false);
+    setTitle('');
+    setDate();
+    setCategory('');
+    setLocation('');
+    setDesc('');
     toast.success("Event Posted Successfully");
   }
   return (
