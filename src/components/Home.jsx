@@ -6,8 +6,6 @@ const Home = () => {
     useEffect(() => {
         document.title = 'Communion';
         toast.success("Welcome to Communion App.");
-        console.log(styles);
-
     }, []);
     return (
         <div>

@@ -14,7 +14,7 @@ const Event = () => {
   const { arr, setArr } = useContext(context);
   const [post, setPost] = useState('');
 
-  const handleCtaegory = (e) => {
+  const handleCategory = (e) => {
     setCategory(e.target.value);
   }
 
@@ -59,7 +59,7 @@ const Event = () => {
             <input type="date" onChange={(e) => setDate(e.target.value)} value={date} />
             <div>
 
-              Category :  <select name="" id="" onChange={(e) => handleCtaegory(e)}>
+              Category :  <select name="" id="" onChange={(e) => handleCategory(e)}>
                 <option value="Select">Select</option>
                 <option value="Religious">Religious</option>
                 <option value="Social">Social</option>

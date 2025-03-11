@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 import './App.css'
-import { Link, Route, Routes, useNavigate } from 'react-router'
+import { Link, Route, Routes } from 'react-router'
 import Home from './components/Home';
 import Event from './components/Event';
 export const context = createContext();
