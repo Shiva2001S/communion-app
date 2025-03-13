@@ -43,7 +43,7 @@ const Event = () => {
   return (
     <div>
       <div className={styles.first}>
-        <button onClick={() => setDisplay(true)}>Add new event</button>
+        <button className={styles.btn2} onClick={() => setDisplay(true)}>Add new event</button>
       </div>
       <div className={styles.mybtnDiv}>
         <button onClick={(e) => setPost(e.target.value)} value={'Religious'} className={styles.mybtn}>Religious</button>
