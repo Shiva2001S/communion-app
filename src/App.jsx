@@ -41,9 +41,9 @@ function App() {
     </section>
     </header>
     <footer className='foot'> 
-      <FaInstagram className='icon' onClick={() => handleIcon('instagram')} /> 
-      <CiLinkedin className='icon' onClick={() => handleIcon('linkedin')} />
-      <CiYoutube className='icon' onClick={() => handleIcon('youtube')} />
+      <FaInstagram className='icon insta' onClick={() => handleIcon('instagram')} /> 
+      <CiLinkedin className='icon linked' onClick={() => handleIcon('linkedin')} />
+      <CiYoutube className='icon youtube' onClick={() => handleIcon('youtube')} />
     </footer>
     <Routes>
       <Route path='/' element={<Home />} />
